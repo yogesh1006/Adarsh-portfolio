@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-
+     margin: 0px;
 }
 
 hr{
@@ -87,8 +87,6 @@ hr{
 
 .navigation .link-active{
 font-weight: bold;   
-
-
 }
 
 
@@ -129,5 +127,22 @@ font-weight: bold;
 }
 
 
+/** footer **/
+
+.footer{
+     background-color: var(--primary-color);
+     padding:10px 5px;
+     text-align: center;
+     color: white;
+     border-top-right-radius: 25px;
+}
+
+.footer .link{
+    color: white;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
 
 
