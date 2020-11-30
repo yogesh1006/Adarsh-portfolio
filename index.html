@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"/>
     <title>Component Library</title>
 </head>
 
@@ -32,10 +33,10 @@
 
 
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
 
     <hr>
@@ -43,15 +44,16 @@
 
     <h2>@Links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
 
     <h2>@Lists</h2>
+
     <h3>unordered list</h3>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
@@ -61,15 +63,15 @@
 
     <h3>unordered inline list</h3>
 
-    <ul>
-        <li>Inline Item one</li>
-        <li>Inline Item two</li>
-        <li>Inline Item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item one</li>
+        <li class="list-item-inline">Inline Item two</li>
+        <li class="list-item-inline">Inline Item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>Milk</li>
         <li>eggs</li>
         <li>break</li>
@@ -81,47 +83,51 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iAMBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">iAMBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active"  href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">about</a>
             </li>
         </ul>
     </nav>
 
-    <hr>
+    <hr >
 
-    <h2>header</h2>
+    <h2>@header</h2>
 
-    <header>
-        <img src="images/my-hero.svg" />
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/my-hero.svg" />
+        <h1 class="hero-heading">Yogesh Kasliwal the <span class="hero-inverted">web developer</span> </h1>
     </header>
 
-    <hr>
+    <hr >
 
     <h2>@section</h2>
 
-    <section>
-        <h3>white section</h3>
+    <section class="section">
+        <h1>white section</h1>
         <p>This will have white background</p>
     </section>
 
-    <section>
-        <h3>off-white section</h3>
-        <p>This will have gray background</p>
+    <section class="section ow">
+        <h1>off-white section</h1>
+        <p class="para">This will have gray background</p>
     </section>
+
+    <hr >
+
+    <h2>@footer</h2>
 
 
     <footer>
-        <div>some small headind inisde footer</div>
+        <div>some small heading inside footer</div>
         <ul>
             <li>socialone</li>
             <li>socialtwo</li>
